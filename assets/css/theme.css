@@ -10,7 +10,8 @@ html, body {
 
 /* Base styling */
 body {
-  background: #0a0a0a;
+  /* Override any earlier styles to ensure dark background */
+  background: #0a0a0a !important;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
@@ -98,6 +99,30 @@ header .logo img {
 header nav {
   display: flex;
   gap: 24px;
+  /* Reset default list styles */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation list and links */
+header nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: #d4af37 !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffffff !important;
 }
 
 header nav a {
@@ -175,9 +200,13 @@ header nav a:hover {
 
 /* Generic section styling */
 section {
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 80px 40px;
+  /* Sections span full width */
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  /* Dark background for sections */
+  background: #0a0a0a;
 }
 
 section h2 {
