@@ -12,7 +12,8 @@ html, body {
 body {
   /* Override any earlier styles to ensure dark background */
   background: #0a0a0a !important;
-  color: #ffffff;
+  /* Use light gray for base text color so it's readable on dark background */
+  color: #dddddd;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
 }
@@ -218,6 +219,7 @@ section h2 {
 section p {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
+  color: #dddddd;
 }
 
 #services ul {
@@ -236,6 +238,7 @@ blockquote {
   font-size: 1.125rem;
   border-left: 4px solid #d4af37;
   padding-left: 1rem;
+  color: #dddddd;
 }
 
 blockquote cite {
@@ -255,6 +258,7 @@ form label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color: #dddddd;
 }
 
 form input,
@@ -304,4 +308,34 @@ footer a {
 
 footer a:hover {
   color: #ffffff;
+}
+
+/* Headings color for better contrast */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+
+/* Gallery section */
+#gallery {
+  padding: 80px 40px;
+  background: #0a0a0a;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
 }
