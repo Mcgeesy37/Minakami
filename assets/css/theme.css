@@ -337,3 +337,36 @@ body:not([class*=elementor-page-]) .site-main {
 .site-header + .elementor {
   min-height: calc(100vh - 320px);
 }
+
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav a {
+  color: #d4af37;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 300;
+}
